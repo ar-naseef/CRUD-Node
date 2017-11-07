@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete</title>
+</head>
+<body>
+	Enter Plate number: <input id="plate" type="text" name="plate"><br>
+	<a id="butn" onclick="loadurl()"><button>Delete</button></a>
+
+</body>
+<script type="text/javascript">
+	function loadurl() {
+		var plate = document.getElementById("plate");
+		var butn = document.getElementById("butn");
+		var plateval = plate.value;
+		console.log(plateval + "is here");
+		butn.href = "/deletedata/"+plateval;
+	}
+	
+</script>
+</html>
